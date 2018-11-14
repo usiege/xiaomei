@@ -1,0 +1,5 @@
+
+*.xml
+*.iml
+CrawImage/venv/*
+CrawImage/venv/Lib/site-packages/easy-install.pth
