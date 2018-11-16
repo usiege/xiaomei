@@ -15,7 +15,7 @@ class Application(Frame):
         self.quitButton.pack()
 
 
-if __init__ == '__main__':
+if __name__ == '__main__':
 
 	app = Application()
 	# 设置窗口标题:
