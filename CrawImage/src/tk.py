@@ -43,6 +43,10 @@ class Application(Frame):
             self.textInsert = Text(self, height=2)
             self.textInsert.pack()
 
+            # if os.path.exists("aiwo.png"):
+            #     self.photo = PhotoImage(file='aiwo.png')
+                
+
 
     def sureAction(self):
         self.stringVar.set("不能反悔了啊！")
@@ -75,7 +79,10 @@ class Application(Frame):
                 justify=CENTER, image=self.background,
                 compound=CENTER, fg='red', font=("华文行楷", 30))
             self.backLabel.pack()
-
+        else:
+            self.backLabel = Label(self, textvariable=self.stringVar, 
+                justify=CENTER, compound=CENTER, fg='red', font=("华文行楷", 30))
+            self.backLabel.pack()
         
         # self.background.pack()
 
