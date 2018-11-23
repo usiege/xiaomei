@@ -74,7 +74,7 @@ class Application(Frame):
 
         image_path = "xiaomei.png"
         if os.path.exists(image_path):
-            self.background = PhotoImage(file="xiaomei.png")
+            self.background = PhotoImage(file=image_path)
             self.backLabel = Label(self, textvariable=self.stringVar, 
                 justify=CENTER, image=self.background,
                 compound=CENTER, fg='red', font=("华文行楷", 30))
